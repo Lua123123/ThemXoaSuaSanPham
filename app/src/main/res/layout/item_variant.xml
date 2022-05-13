@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/item_list">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/productImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:cardCornerRadius="@dimen/img_radius_variant"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="@dimen/img_size_variant"
+            android:layout_height="@dimen/img_size_variant"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_product" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvNameProductL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/productImg"
+        android:text="V-Neck"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvPriceL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvNameProductL"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/productImg"
+        android:text="300usd" />
+
+    <TextView
+        android:id="@+id/tvTotalStockL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/variant_text_color_1"
+        android:textSize="14sp"
+        android:layout_below="@+id/tvPriceL"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/productImg"
+        android:text="Total stock: 2" />
+
+    <TextView
+        android:id="@+id/tvSizeL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/variant_text_color_1"
+        android:textSize="14sp"
+        android:layout_below="@+id/tvTotalStockL"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/productImg"
+        android:text="Size: L" />
+
+    <TextView
+        android:id="@+id/tvColorL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/variant_text_color_1"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="87dp"
+        android:layout_toEndOf="@+id/tvSizeL"
+        android:text="Color: Red" />
+
+</RelativeLayout>

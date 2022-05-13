@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_item_height">80dp</dimen>
+    <dimen name="img_radius_variant">25dp</dimen>
+    <dimen name="img_size_variant">100dp</dimen>
+    <dimen name="circle_popup_size_variant">80dp</dimen>
+    <dimen name="circle_popup_radius_variant">40dp</dimen>
+</resources>
